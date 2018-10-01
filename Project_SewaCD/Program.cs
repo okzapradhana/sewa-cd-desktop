@@ -16,7 +16,7 @@ namespace Project_SewaCD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListCD());
+            Application.Run(new LamanUser());
         }
     }
 }

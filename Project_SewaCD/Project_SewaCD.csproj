@@ -103,11 +103,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ListCD.cs">
-      <SubType>Form</SubType>
+    <Compile Include="ListCDUserControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ListCD.Designer.cs">
-      <DependentUpon>ListCD.cs</DependentUpon>
+    <Compile Include="ListCDUserControl.Designer.cs">
+      <DependentUpon>ListCDUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListPeminjamanUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListPeminjamanUserControl.Designer.cs">
+      <DependentUpon>ListPeminjamanUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -115,11 +121,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Peminjaman.cs">
+    <Compile Include="LamanUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Peminjaman.Designer.cs">
-      <DependentUpon>Peminjaman.cs</DependentUpon>
+    <Compile Include="LamanUser.Designer.cs">
+      <DependentUpon>LamanUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,14 +135,17 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ListCD.resx">
-      <DependentUpon>ListCD.cs</DependentUpon>
+    <EmbeddedResource Include="ListCDUserControl.resx">
+      <DependentUpon>ListCDUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListPeminjamanUserControl.resx">
+      <DependentUpon>ListPeminjamanUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Peminjaman.resx">
-      <DependentUpon>Peminjaman.cs</DependentUpon>
+    <EmbeddedResource Include="LamanUser.resx">
+      <DependentUpon>LamanUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
