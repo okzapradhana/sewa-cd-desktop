@@ -90,6 +90,10 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>D:\SEM5\Pemrograman Platform Khusus\Bunifu UI WinForms 1.8.0.1\Bunifu UI WinForms 1.8.0.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\Mac\Home\Documents\sewaCD\sewaCD\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -103,6 +107,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TambahCD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahCD.Designer.cs">
+      <DependentUpon>TambahCD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pengembalian.Designer.cs">
+      <DependentUpon>Pengembalian.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListCDUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -127,6 +143,12 @@
     <Compile Include="LamanUser.Designer.cs">
       <DependentUpon>LamanUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="PeminjamanAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeminjamanAdmin.Designer.cs">
+      <DependentUpon>PeminjamanAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.cs">
@@ -135,6 +157,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TambahCD.resx">
+      <DependentUpon>TambahCD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengembalian.resx">
+      <DependentUpon>Pengembalian.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListCDUserControl.resx">
       <DependentUpon>ListCDUserControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LamanUser.resx">
       <DependentUpon>LamanUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeminjamanAdmin.resx">
+      <DependentUpon>PeminjamanAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

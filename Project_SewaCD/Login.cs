@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace Project_SewaCD
 {
     public partial class Login : Form
     {
+        string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=sewa_cd";
+        int i;
+
         public Login()
         {
             InitializeComponent();
@@ -63,6 +67,45 @@ namespace Project_SewaCD
         private void bunifuImageButton2_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection(connectionString);
+
+            i = 0;
+            con.Open();
+            MySqlCommand cmd = con.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from user where username='" + bunifuMaterialTextbox1.Text + "' and password='" + bunifuMaterialTextbox2.Text + "'";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            MySqlDataAdapter dataset = new MySqlDataAdapter(cmd);
+            dataset.Fill(dt);
+            i = Convert.ToInt32(dt.Rows.Count.ToString());
+
+            if (i == 0)
+            {
+               MessageBox.Show("Username dan Password invalid!");
+            }
+            else
+            {
+                if (bunifuMaterialTextbox1.Text.Equals("admin"))
+                {
+                    this.Hide();
+                    PeminjamanAdmin peminjamanAdmin = new PeminjamanAdmin();
+                    peminjamanAdmin.Show();
+                }
+                else
+                {
+                    this.Hide();
+                    LamanUser frm2 = new LamanUser(bunifuMaterialTextbox1.Text);
+                    frm2.Show();
+                }
+
+            }
+
+            con.Close();
         }
     }
 }

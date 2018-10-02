@@ -41,8 +41,8 @@
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.listCDUserControl1 = new Project_SewaCD.ListCDUserControl();
             this.listPeminjamanUserControl1 = new Project_SewaCD.ListPeminjamanUserControl();
+            this.listCDUserControl1 = new Project_SewaCD.ListCDUserControl();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -72,11 +72,11 @@
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Montserrat", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel7.ForeColor = System.Drawing.Color.White;
             this.bunifuCustomLabel7.Location = new System.Drawing.Point(21, 96);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(139, 23);
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(134, 24);
             this.bunifuCustomLabel7.TabIndex = 7;
             this.bunifuCustomLabel7.Text = "S E W A  C D";
             // 
@@ -113,7 +113,7 @@
             this.bunifuFlatButtonListCD.Text = "List CD";
             this.bunifuFlatButtonListCD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButtonListCD.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButtonListCD.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButtonListCD.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButtonListCD.Click += new System.EventHandler(this.bunifuFlatButtonListCD_Click);
             // 
             // bunifuFlatButtonPeminjaman
@@ -149,7 +149,7 @@
             this.bunifuFlatButtonPeminjaman.Text = "Peminjaman";
             this.bunifuFlatButtonPeminjaman.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButtonPeminjaman.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButtonPeminjaman.TextFont = new System.Drawing.Font("Montserrat", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButtonPeminjaman.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButtonPeminjaman.Click += new System.EventHandler(this.bunifuFlatButtonPeminjaman_Click);
             // 
             // bunifuGradientPanel1
@@ -204,7 +204,8 @@
             this.bunifuFlatButtonLogout.Text = "Logout";
             this.bunifuFlatButtonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuFlatButtonLogout.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButtonLogout.TextFont = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButtonLogout.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButtonLogout.Click += new System.EventHandler(this.bunifuFlatButtonLogout_Click);
             // 
             // panel1
             // 
@@ -234,7 +235,7 @@
             // bunifuCustomLabel5
             // 
             this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Montserrat", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.SlateBlue;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(275, 12);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
@@ -256,14 +257,6 @@
             this.bunifuImageButton1.Zoom = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click_1);
             // 
-            // listCDUserControl1
-            // 
-            this.listCDUserControl1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.listCDUserControl1.Location = new System.Drawing.Point(175, 52);
-            this.listCDUserControl1.Name = "listCDUserControl1";
-            this.listCDUserControl1.Size = new System.Drawing.Size(626, 397);
-            this.listCDUserControl1.TabIndex = 10;
-            // 
             // listPeminjamanUserControl1
             // 
             this.listPeminjamanUserControl1.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -272,7 +265,15 @@
             this.listPeminjamanUserControl1.Size = new System.Drawing.Size(625, 397);
             this.listPeminjamanUserControl1.TabIndex = 11;
             // 
-            // Peminjaman
+            // listCDUserControl1
+            // 
+            this.listCDUserControl1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.listCDUserControl1.Location = new System.Drawing.Point(175, 52);
+            this.listCDUserControl1.Name = "listCDUserControl1";
+            this.listCDUserControl1.Size = new System.Drawing.Size(626, 397);
+            this.listCDUserControl1.TabIndex = 10;
+            // 
+            // LamanUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -283,7 +284,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Peminjaman";
+            this.Name = "LamanUser";
             this.Text = "Peminjaman";
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton6)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);

@@ -12,10 +12,19 @@ namespace Project_SewaCD
 {
     public partial class LamanUser : Form
     {
-        public LamanUser()
+        String username;
+
+        public LamanUser(String user)
         {
             InitializeComponent();
             listCDUserControl1.BringToFront();
+            listCDUserControl1.callListUser(user);
+            username = user;
+        }
+
+        public LamanUser()
+        {
+            InitializeComponent();
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -46,6 +55,14 @@ namespace Project_SewaCD
         private void bunifuFlatButtonPeminjaman_Click(object sender, EventArgs e)
         {
             listPeminjamanUserControl1.BringToFront();
+            listPeminjamanUserControl1.callListUser(username);
+        }
+
+        private void bunifuFlatButtonLogout_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }
